@@ -41,12 +41,9 @@ header img{
 /**EXPLORE**/
 
 .explore {
-    padding: 0.8rem;
+    padding: 3rem;
     text-align: center;
-}
-
-.explore h1{
-    margin-top: 2rem;
+    background-color: #fafafa;
 }
 
 .explore p{
@@ -55,6 +52,15 @@ header img{
 
 .explore button{
     margin-top: 1rem;
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+    color: white;
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+    margin-top: 1.5rem;
 }
 
 
@@ -95,6 +101,10 @@ header img{
     padding: 0 1rem;
 }
 
+.fonction h2{
+    margin-top: 2.5rem;
+    margin-bottom: 1.8rem;
+}
 
 
 .ftn{
@@ -143,6 +153,7 @@ header img{
     padding-top: 2rem;
     margin-top: 4rem;
     background-color: #f6f6f6;
+    padding-bottom: 3.5rem;
 }
 
 .menu h2{
@@ -197,3 +208,28 @@ header img{
 }
 
 
+.footer{
+    display: flex;
+    background-color: #353535;
+    color: white;
+    padding: 1rem;
+}
+
+.footer h3{
+    font-family: Shrikhand, "cursive";
+    color: white;
+    font-weight: 500;
+    padding-bottom: 0.8rem;
+}
+
+.footer .fa-utensils{
+    margin-right: 0.8rem;
+}
+
+.footer .fa-handshake-angle{
+    margin-right: 0.4rem;
+}
+
+.footer a{
+    color: white;
+}
