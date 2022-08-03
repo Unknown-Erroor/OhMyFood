@@ -29,7 +29,7 @@ header img{
 
 /**LOCATION**/
 
-.location {
+.location{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +40,7 @@ header img{
 
 /**EXPLORE**/
 
-.explore {
+.explore{
     padding: 3rem;
     text-align: center;
     background-color: #fafafa;
@@ -50,7 +50,7 @@ header img{
     margin-top: 0.8rem;
 }
 
-.explore button{
+.explore button {
     margin-top: 1rem;
     background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
     color: white;
@@ -61,6 +61,13 @@ header img{
     border: none;
     box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
     margin-top: 1.5rem;
+    transition: transform 200ms;
+}
+
+.explore button:hover{
+    transform: scale(1.02);
+    opacity: 0.9;
+    cursor: pointer;
 }
 
 
@@ -113,6 +120,7 @@ header img{
     flex-direction: column;
     margin-left: 3%;
     gap: 1rem;
+    font-weight: 500;
 }
 
 .ftn-btn{
@@ -144,16 +152,38 @@ header img{
     color: gray;
 }
 
+.ftn-btn:hover{
+    background-color: rgb(238, 230, 238);
+}
+
+.ftn-btn:hover i{
+    color: #9356DC;
+}
+
+
+@media (min-width : 992px){
+    .ftn{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+
+
+
 /**MENU**/
 
 .menu {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1rem;
     padding-top: 2rem;
     margin-top: 4rem;
     background-color: #f6f6f6;
     padding-bottom: 3.5rem;
+    justify-content: space-evenly;
 }
 
 .menu h2{
@@ -186,6 +216,28 @@ header img{
     padding: 0.5rem;
 }
 
+.fa-heart:hover{
+    background: linear-gradient(to top, rgba(255, 121, 218, 0.9), rgba(147, 86, 220, 0.9));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation-duration: 1.5s;
+    animation-name: heart;
+}
+
+@keyframes heart {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+
+
+
 .card-img img{
     border-radius: 1rem 1rem 0 0;
     height: 10rem;
@@ -207,6 +259,17 @@ header img{
     top: 0.8rem;
 }
 
+@media (min-width : 1024px){
+    .menu-card{
+        width: 48%;
+    }
+    .card-img img{
+        height: 20rem;
+    }
+}
+
+
+/*FOOTER*/
 
 .footer{
     display: flex;
