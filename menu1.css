@@ -5,6 +5,11 @@
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 /*HEADER*/
 
 header {
@@ -55,7 +60,6 @@ main .container h3::after{
     bottom: 0;
 }
 
-
 main img{
     max-width: 100%;
     width: 100%;
@@ -90,13 +94,12 @@ main img{
 
 .card {
     display: flex;
-    /*justify-content: space-between;*/
-    /*padding: 1rem;*/
     background-color: white;
     box-shadow: 0 0 1rem #0000002e;
     border-radius: 1rem;
     width: 100%;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .card:hover .card-confirmation {
@@ -126,36 +129,6 @@ main img{
     animation-name: appear;
 }
 
-/*.delay4 {
-    animation: 4s;
-    animation-name: appear;
-}
-
-.delay5 {
-    animation: 5s;
-    animation-name: appear;
-}
-
-.delay6 {
-    animation: 6s;
-    animation-name: appear;
-}
-
-.delay7 {
-    animation: 7s;
-    animation-name: appear;
-}
-
-.delay8 {
-    animation: 8s;
-    animation-name: appear;
-}
-
-.delay9 {
-    animation: 9s;
-    animation-name: appear;
-}*/
-
 @keyframes appear {
     0% {
         transform: translateY(50%);
@@ -168,13 +141,13 @@ main img{
     
 }
 
+@media (min-width : 1245px){
+    .foods {
+        flex-direction: row;
+    }
+}
 
 .price {
-    /*margin-top: 20px;
-    margin-right: 15px;*/
-    /*display: flex;
-    justify-content: flex-end;
-    margin-top: -1.2rem;*/
     margin-left: auto;
     padding: 1rem;
     display: flex;
@@ -196,7 +169,7 @@ main img{
     justify-content: center;
     align-items: center;
     width: 1.2rem;
-    aspect-ratio: 1;
+    aspect-ratio: 1 / 1;
     color: #99E2D0;
     background-color: white;
     border-radius: 50%;
@@ -211,7 +184,6 @@ main img{
     }
     
 }
-
 
 /*BUTTON COMMANDER*/
 
@@ -241,15 +213,6 @@ button:hover{
     opacity: 0.9;
     cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
 
 /*FOOTER*/
 

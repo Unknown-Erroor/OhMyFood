@@ -7,13 +7,16 @@
 
 a {
     text-decoration: none;
+    color: black;
 }
+
 a:visited{
     text-decoration: none;
     color: black;
 }
 
 /**HEADER**/
+
 header {
     display: flex;
     justify-content: center;
@@ -70,9 +73,7 @@ header img{
     cursor: pointer;
 }
 
-
 /**FONCTION**/
-
 
 .fonction, .menu{
     padding: 0 1rem;
@@ -140,9 +141,6 @@ header img{
     }
 }
 
-
-
-
 /**MENU**/
 
 .menu {
@@ -205,9 +203,6 @@ header img{
     }
   }
 
-
-
-
 .card-img img{
     border-radius: 1rem 1rem 0 0;
     height: 10rem;
@@ -237,7 +232,6 @@ header img{
         height: 20rem;
     }
 }
-
 
 /*FOOTER*/
 
