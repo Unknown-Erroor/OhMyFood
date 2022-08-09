@@ -129,6 +129,11 @@ main img{
     animation-name: appear;
 }
 
+.delay4 {
+    animation: 4s;
+    animation-name: appear;
+}
+
 @keyframes appear {
     0% {
         transform: translateY(50%);
