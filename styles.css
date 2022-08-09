@@ -10,9 +10,50 @@ a {
     color: black;
 }
 
-a:visited{
+a:visited {
     text-decoration: none;
     color: black;
+}
+
+/**Loading**/
+
+.omf {
+    font-family: shrikhand;
+    font-size: 2rem;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+    opacity: 1;
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    animation: loader 500ms 2s;
+    animation-fill-mode: forwards;
+}
+
+.loading i {
+    animation: spin 5s ease;
+    color: #9356DC;
+}
+
+@keyframes loader {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /**HEADER**/
