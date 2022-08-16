@@ -100,6 +100,8 @@ main img{
     width: 100%;
     overflow: hidden;
     cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .card:hover .card-confirmation {
@@ -112,6 +114,15 @@ main img{
 
 .card-menu{
     padding: 1rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card-menu h4, p{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .delay1 {
